@@ -6,16 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design this Card</title>
     <style>
+      :root{
+        --nav-text-color: black;
+        --nav-text-background-color: white;
+        --nav-text-hover-color: aquamarine;
+        --page-color: aliceblue;
+        --card-color: white;
+
+
+
+      }
         @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
     </style>
     <style>
-        * {
-            background-color: aliceblue;
-            font-family: 'Playpen Sans', cursive;
+
+        .nav{
+          color: var(--nav-text-color);
+          height: 50px;
+          background-color: var(--nav-text-background-color);
+          /* border-radius: 50px; */
+          box-shadow: -5px -3px 12px 0px;
 
         }
+        .nav ul li:hover{
+          color: var(--nav-text-hover-color)
+        }
+        .nav ul{
+          display:flex;
+          list-style: none;
+          text-align: center;
+
+        }
+        .nav ul li{
+          padding: 10px;
+          
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: 'Playpen Sans', cursive;
+        }
+
+        body{
+          background-color:var(--page-color)
+
+        }
+
+
         .color{
-            background-color: white;
+            background-color: var(--card-color)
 
         }
 
@@ -69,9 +109,17 @@
 </head>
 
 <body>
+  <div class="nav">
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+
+  </div>
     <div class="box color">
         <div class="img color">
-            <img class="img" height="320px" src="https://mrlabbrow.github.io/Simple-Card/A-wonderful-Lake.jpg"
+            <img class="img" height="320px" src="https://mrlabbrow.github.io/Simple-Card/A-wonderful-Lake.jpg "
                 alt="">
         </div>
         <div class="text color">
